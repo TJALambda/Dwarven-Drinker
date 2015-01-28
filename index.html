@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="author" content="Thomas Lambert, Ellis Derham" />
+
+<meta name="keywords" content="Dwarven Drinker, University of Greenwich, Thomas Lambert, Ellis Derham" />
+
+<meta name="description" content="Dwarven Drinker - The Game" />
+
+<title>Dwarven Drinker</title>
+
+<link rel="stylesheet" href="stylesheet.css">
+
+<link rel="icon" href="icon.png">
+
+<script src="ddrinker.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="jquery.queryloader2.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+	
+		<div class="left">
+		Ale
+			<div class="upgrades" id="upgradesLeft">
+			</div>
+			<div class="clear"></div>
+			Dwarfs
+			<div class = "dwarfs" id="dwarfsLeft">
+			</div>
+		</div>
+
+		<div class="right">
+		Gems
+			<div class="upgrades" id="upgradesRight">
+			</div>
+			<div class="clear"></div>
+			Dwarfs
+			<div class = "dwarfs" id="dwarfsRight">
+			</div>
+		</div>		
+		
+		<div class="middle" id="middle">
+			<h2>Dwarven Drinker</h2>
+			<br>
+			<h1 id="amount"></h1>
+			<br>
+			<h3 id="perSecond"></h3>
+			<br>
+			<h1>Ale: </h1><h4 id="ale">0</h4>
+			<br>
+			<h3>Per Second: </h3><h3 id="alePerSecond">0</h3>
+			<br><br><br>
+			<h1>Gems: </h1><h4 id="gems">0</h4>
+			<br>
+			<h3>Per Second: </h3><h3 id="gemsPerSecond">0</h3>
+			<br><br><br>
+			<h1>Fortress Size: </h1><h4 id="fortress">0</h4>
+			<br><br>
+			<img alt="" src="imgs/dwarfNormal.png" style="height: 400px; width: 250px" id="dwarf" 
+	onmousedown="dwarfMouseDown()" onmouseup="dwarfMouseOver()" onmouseover="dwarfMouseOver()" onmouseout="dwarfMouseOut()"/>
+			<br>
+			<div class="reset" onmousedown="GameReset()">Reset</div>
+			<br><br><br>
+		</div>
+		
+	</div>
+	
+<footer>Dwarven Drinker &copy;  λ Initiative, 2014 | Created by <a href="https://twitter.com/TJALambda" target="_blank">Thomas Lambert</a> and <a href="https://twitter.com/DerhamEllis" target="_blank">Ellis Derham</a></footer>
+
+
+</body>
+
+<script>$(document).ready(function () {
+    $("body").queryLoader2();
+});</script>
+
+</html>
